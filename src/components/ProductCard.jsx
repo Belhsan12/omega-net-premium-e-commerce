@@ -8,7 +8,6 @@ export default function ProductCard({ product }) {
       whileHover={{ y: -10 }}
       className="group relative bg-white rounded-[2.5rem] border border-slate-100 p-3 transition-all duration-500 hover:shadow-[0_30px_60px_-15px_rgba(0,0,0,0.08)] h-full flex flex-col"
     >
-      {/* Action Overlay */}
       <div className="absolute top-6 right-6 z-20 flex flex-col gap-2 opacity-0 group-hover:opacity-100 translate-x-4 group-hover:translate-x-0 transition-all duration-300">
         <button className="w-10 h-10 bg-white rounded-full flex items-center justify-center shadow-lg hover:bg-orange-500 hover:text-white transition-colors">
           <Heart size={18} />
@@ -18,7 +17,6 @@ export default function ProductCard({ product }) {
         </button>
       </div>
 
-      {/* Media Container */}
       <div className={`relative h-72 rounded-[2rem] overflow-hidden ${product.bgColor} transition-colors duration-500 group-hover:bg-slate-50`}>
         {product.isNew && (
           <div className="absolute top-4 left-4 z-10">
@@ -36,7 +34,6 @@ export default function ProductCard({ product }) {
           className="w-full h-full object-contain p-8 mix-blend-multiply drop-shadow-2xl transition-transform duration-500"
         />
 
-        {/* Discount Badge */}
         {product.oldPrice && (
           <div className="absolute bottom-4 left-4">
             <span className="bg-red-500 text-white text-[10px] font-black px-3 py-1.5 rounded-xl shadow-lg">
@@ -46,7 +43,6 @@ export default function ProductCard({ product }) {
         )}
       </div>
 
-      {/* Content Area */}
       <div className="p-5 pt-6 flex-1 flex flex-col">
         <div className="flex items-center justify-between mb-2">
           <span className="text-[10px] font-black text-orange-500 uppercase tracking-[0.2em]">{product.label}</span>
@@ -77,7 +73,6 @@ export default function ProductCard({ product }) {
           ))}
         </div>
 
-        {/* Footer Area */}
         <div className="mt-auto pt-6 border-t border-slate-50 flex items-center justify-between">
           <div className="flex flex-col">
             {product.oldPrice && (

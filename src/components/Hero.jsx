@@ -5,7 +5,6 @@ import { ArrowRight, Star, ShieldCheck, Zap } from 'lucide-react';
 export default function Hero() {
   return (
     <div className="relative bg-white pt-32 pb-20 overflow-hidden">
-      {/* Abstract Background Shapes */}
       <div className="absolute top-0 right-0 w-[50%] h-[100%] bg-gradient-to-bl from-orange-50/50 to-transparent -z-10" />
       <div className="absolute -top-24 -right-24 w-96 h-96 bg-orange-200/20 blur-[100px] rounded-full -z-10" />
       
@@ -80,7 +79,6 @@ export default function Hero() {
           animate={{ opacity: 1, scale: 1, rotate: 0 }}
           transition={{ duration: 1, ease: "easeOut" }}
         >
-          {/* Glowing Aura */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full bg-orange-400/20 blur-[120px] rounded-full animate-pulse" />
           
           <motion.div
@@ -95,7 +93,6 @@ export default function Hero() {
             />
           </motion.div>
 
-          {/* Floating Feature Badges */}
           <motion.div 
             animate={{ y: [0, 10, 0] }}
             transition={{ duration: 4, repeat: Infinity, ease: "easeInOut", delay: 1 }}
